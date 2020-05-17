@@ -1,0 +1,131 @@
+{
+  "id": "aa86ad27-e9d1-4166-a55c-853bd17f44ed",
+  "version": "2.0",
+  "name": "delete",
+  "url": "https://room.rakuten.co.jp",
+  "tests": [{
+    "id": "bfe98731-f4f3-48f8-ade1-c5b868d13de8",
+    "name": "test",
+    "commands": [{
+      "id": "a0336b34-d48c-4c9a-92ee-0c29b5cb0acc",
+      "comment": "",
+      "command": "open",
+      "target": "/room_c20ad481de/items",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8159cd2f-864d-40cf-9283-e095f88d4b65",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1294x694",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e496e950-5791-41b1-9765-3ba095f71030",
+      "comment": "",
+      "command": "store",
+      "target": "200",
+      "targets": [],
+      "value": "Var"
+    }, {
+      "id": "6b70b5a6-e681-4e77-814d-bee25e903126",
+      "comment": "",
+      "command": "do",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b8c8916-04ae-44d0-8992-56d92f852c14",
+      "comment": "",
+      "command": "click",
+      "target": "css=.slot:nth-child(1) > .item:nth-child(1) .detail .image",
+      "targets": [
+        ["css=.slot:nth-child(1) > .item:nth-child(1) .detail .image", "css:finder"],
+        ["xpath=//img[@alt='マイクロソフト　Microsoft SurfacePro7 [12.3型 /SSD 128GB /メモリ 8GB /Intel Core i5 /プラチナ/2019年] VDV-00014 Windowsタブレット サーフェスプロ7[surface pro 7 タブレット 本体 12インチ VDV00014]']", "xpath:img"],
+        ["xpath=//html[@id='ng-app']/body/div/div/div[5]/div[2]/div/div/div/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7bf1dbb-9e70-4dd3-9b6c-3119ed8b328b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.status-box",
+      "targets": [
+        ["css=.status-box", "css:finder"],
+        ["xpath=//div[@id='content-box']/div[3]/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfe3b236-995a-4321-99c6-ddcad8feed6b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=編集・削除",
+      "targets": [
+        ["linkText=編集・削除", "linkText"],
+        ["css=.edit", "css:finder"],
+        ["xpath=//a[contains(text(),'編集・削除')]", "xpath:link"],
+        ["xpath=//html[@id='ng-app']/body/div/div/div[5]/div[2]/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '')])[49]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'編集・削除')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6568308-4cdd-4a17-bc20-6d24d4a6758a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0092bb4b-027b-41d6-813c-7cf0bb321de1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=この商品を削除",
+      "targets": [
+        ["linkText=この商品を削除", "linkText"],
+        ["css=.delete-button", "css:finder"],
+        ["xpath=//a[contains(text(),'この商品を削除')]", "xpath:link"],
+        ["xpath=//div[@id='scroller']/div[4]/div[6]/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '')])[11]", "xpath:href"],
+        ["xpath=//div[6]/div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'この商品を削除')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b24c236-024c-4abc-ad3e-0e26e83c8286",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=はい",
+      "targets": [
+        ["linkText=はい", "linkText"],
+        ["css=.right > .button", "css:finder"],
+        ["xpath=//a[contains(text(),'はい')]", "xpath:link"],
+        ["xpath=//html[@id='ng-app']/body/div/div/div/div/div/div/div[2]/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'はい')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b534e0b1-fed9-4306-bcb1-db55718931fd",
+      "comment": "",
+      "command": "repeatIf",
+      "target": "${Var}===\"200\"",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5e51f58b-12bb-42f9-86bf-1a707e61f899",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bfe98731-f4f3-48f8-ade1-c5b868d13de8"]
+  }],
+  "urls": ["https://room.rakuten.co.jp/"],
+  "plugins": []
+}
